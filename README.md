@@ -7,8 +7,8 @@
 - [x] React hooks used:
 
 ```js
-useEffect;
-useRef;
+Form 1 - useEffect;
+Form 2 - useRef;
 ```
 
 ![React Components - Sign Up Form](./form/SignUpForm.png)
