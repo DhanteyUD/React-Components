@@ -4,7 +4,7 @@
 
 - [x] With a little refactor, can be used for all forms
 
-- [x] React hooks used: `useState`
+- [x] React hook used: `useState`
 
 ![React Components - Sign Up Form](./form/SignUpForm.png)
 
