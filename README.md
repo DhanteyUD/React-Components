@@ -13,4 +13,4 @@ Form 2 - useRef;
 
 ![React Components - Sign Up Form](./form/SignUpForm.png)
 
-### Component 2 - Day/Dark Mode App
+## Component 2 - Day/Dark Mode App
