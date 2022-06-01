@@ -4,12 +4,7 @@
 
 - [x] With a little refactor, can be used for all forms
 
-- [x] React hooks used:
-
-```js
-Form 1 - useEffect;
-Form 2 - useRef;
-```
+- [x] React hooks used: `useState`
 
 ![React Components - Sign Up Form](./form/SignUpForm.png)
 

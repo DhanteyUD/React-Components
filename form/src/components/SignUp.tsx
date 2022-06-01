@@ -121,5 +121,3 @@ const SignUp = () => {
 };
 
 export default SignUp;
-
-///////////////////////PAGE BREAK///////////////////////////>
