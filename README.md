@@ -1,14 +1,14 @@
 # React-Components
 
-### Component 1 - Sign Up Form
+## Component 1 - Sign Up Form
 
-1. With a little refactor, can be used for all forms
+- [x] With a little refactor, can be used for all forms
 
-2. React hooks used:
+- [x] React hooks used:
 
 ```js
-- [x] useEffect
-- [x] useRef
+useEffect;
+useRef;
 ```
 
 ![React Components - Sign Up Form](./form/SignUpForm.png)
