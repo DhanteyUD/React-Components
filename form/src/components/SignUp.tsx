@@ -1,18 +1,13 @@
 import * as React from 'react';
+import { SIGNUP, Input } from '../models/signup.model';
 import '../App.css';
-import SIGNUP from '../models/signup.model';
 
 // SIGN UP FORM - useState
 const SignUp = () => {
   const [passwordVisibility, setPasswordVisibility] =
     React.useState<boolean>(false);
   const [error, setError] = React.useState<string>('');
-  const [signup, setSignup] = React.useState<SIGNUP>({
-    fullname: '',
-    email: '',
-    mobile: '',
-    password: '',
-  });
+  const [signup, setSignup] = React.useState<SIGNUP>(Input);
 
   const togglePasswordVisiblity = () => {
     setPasswordVisibility(passwordVisibility ? false : true);
@@ -38,6 +33,10 @@ const SignUp = () => {
     const { name, value } = e.target;
     setSignup((formData) => ({ ...formData, [name]: value }));
   };
+
+  React.useEffect(() => {
+    document.title = signup.fullname + ' | Sign Up';
+  });
 
   return (
     <>
