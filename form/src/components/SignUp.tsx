@@ -25,7 +25,7 @@ const SignUp = () => {
     }
     setError('');
     console.log(signup);
-    setSignup({ fullname: '', email: '', mobile: '', password: '' });
+    setSignup(Input);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
