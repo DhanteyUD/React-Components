@@ -1,38 +1,145 @@
-.App {
+* {
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.text-light {
+  color: #000;
   text-align: center;
+  margin-top: 45px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-night {
+  color: #fff;
+  text-align: center;
+  margin-top: 45px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.switch {
+  top: 40px;
+  right: 100px;
+  position: absolute;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.switch-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2196f3;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
+
+.switch-input:checked + .slider {
+  background-color: rgb(101, 98, 98);
+}
+
+.switch-input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+.switch-input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.sun {
+  font-weight: 600;
+  position: absolute;
+  top: -7.5px;
+  right: 70.8px;
+  font-size: 15px;
+}
+.sun-moon {
+  color: rgba(128, 128, 128, 0.407);
+  position: absolute;
+  top: -7.5px;
+  right: -46px;
+  font-size: 15px;
+}
+
+.moon {
+  color: #fff;
+  position: absolute;
+  top: -7.5px;
+  right: -46px;
+  font-size: 15px;
+}
+.moon-sun {
+  color: rgba(128, 128, 128, 0.407);
+  position: absolute;
+  top: -7.5px;
+  right: 70.8px;
+  font-size: 15px;
+}
+
+.half-moon {
+  top: 5px;
+  right: 12px;
+  position: absolute;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(101, 98, 98);
+  cursor: pointer;
+}
+
+.smiley {
+  position: absolute;
+  top: 100px;
+  right: 110px;
+  font-size: 40px;
+}
+
+.image {
+  position: absolute;
+  top: 100px;
+  right: 22%;
+}
+
+/* .sun {
+  position: absolute;
+  top: -7.5px;
+  right: 35.8px;
+  font-size: 15px;
+}
+
+.moon {
+  position: absolute;
+  top: -7.5px;
+  right: 10px;
+  font-size: 15px;
+} */
