@@ -9,3 +9,8 @@
 ![React Components - Sign Up Form](./form/SignUpForm.png)
 
 ## Component 2 - Day/Dark Mode App
+
+- [x] React hook used: `useState`, `useEffect`
+
+https://user-images.githubusercontent.com/85023604/175662045-c1f4b5ac-1dd0-46c0-b399-904b440546a0.mov
+
