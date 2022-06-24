@@ -8,7 +8,7 @@
 
 ![React Components - Sign Up Form](./form/SignUpForm.png)
 
-## Component 2 - Day/Dark Mode App
+## Component 2 - Light & Dark Mode Theme
 
 - [x] React hook used: `useState`, `useEffect`
 
